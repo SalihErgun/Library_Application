@@ -1,0 +1,30 @@
+[
+    {
+        "user_id": "1",
+        "user_name": "Salih Ergun",
+        "phone": "061111111",
+        "address": "Groningen",
+        "book_barcode": 9786257671293,
+        "book_language": "Türkçe",
+        "book_price": 18.0,
+        "book_title": "Hayat Kaybettiğin Yerden Başlar",
+        "book_publisher": "İndigo Kitap",
+        "book_author": "Miraç Çağrı Aktaş",
+        "borrow_date": "2025-01-06 23:23:54",
+        "return_date": "2025-01-20"
+    },
+    {
+        "user_id": "2",
+        "user_name": "Ali Oz",
+        "phone": "062222222",
+        "address": "Hogezand",
+        "book_barcode": 9789751042125,
+        "book_language": "Türkçe",
+        "book_price": 18.2,
+        "book_title": "Balıkçı ve Oğlu",
+        "book_publisher": "İnkılap Kitabevi",
+        "book_author": "Zülfü Livaneli",
+        "borrow_date": "2025-01-06 23:24:28",
+        "return_date": "2025-01-20"
+    }
+]

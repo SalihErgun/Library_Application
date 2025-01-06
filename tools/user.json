@@ -1,14 +1,14 @@
 [
     {
         "id": "1",
-        "Name": "Salih",
-        "Phone": "06111111",
+        "Name": "Salih Ergun",
+        "Phone": "061111111",
         "Address": "Groningen"
     },
     {
         "id": "2",
-        "Name": "Ali",
-        "Phone": "0622222",
+        "Name": "Ali Oz",
+        "Phone": "062222222",
         "Address": "Hogezand"
     }
 ]

@@ -3,7 +3,7 @@ import json
 # Kitapları JSON dosyasından okuma
 def read_books():
     try:
-        with open("kitap.json", "r", encoding="utf-8") as file:
+        with open("tools/kitap.json", "r", encoding="utf-8") as file:
             kitaplar = json.load(file)
     except FileNotFoundError:
         kitaplar = []  # Dosya yoksa boş bir liste döndür
@@ -11,7 +11,7 @@ def read_books():
 
 # Kitapları JSON dosyasına yazma
 def write_books(kitaplar):
-    with open("kitap.json", "w", encoding="utf-8") as file:
+    with open("tools/kitap.json", "w", encoding="utf-8") as file:
         json.dump(kitaplar, file, ensure_ascii=False, indent=4)
 
 # Kitap bilgilerini ekrana yazdırma (strip boşluk karakterlerinden temizleme)
