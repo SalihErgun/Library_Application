@@ -17,6 +17,7 @@ def read_users():
 def write_users(users):
     with open("tools/user.json", "w", encoding="utf-8") as file:
         json.dump(users, file, ensure_ascii=False, indent=4)
+
 def display_all_members():
     users = read_users()
     if not users:
@@ -25,6 +26,7 @@ def display_all_members():
     print("List of all members:")
     for user in users:
         print(f"ID: {user['id']}, Name: {user['Name']}, Phone: {user['Phone']}, Address: {user['Address']}")
+
 def add_member():
     users = read_users()
     new_id = str(max([int(user['id']) for user in users], default=0) + 1) if users else "1"
@@ -41,6 +43,7 @@ def add_member():
     users.append(new_member)
     write_users(users)  # Verileri dosyaya yaz
     print(f"Member added successfully with ID {new_id}.")
+
 def search_member():
     users = read_users()
     search_id = input("Enter member ID to search: ")
@@ -49,6 +52,7 @@ def search_member():
             print(f"ID: {user['id']}, Name: {user['Name']}, Phone: {user['Phone']}, Address: {user['Address']}")
             return
     print("Member not found.")
+
 def delete_member():
     users = read_users()
     delete_id = input("Enter member ID to delete: ")
@@ -70,7 +74,6 @@ def read_tracks():
 def write_tracks(tracks):
     with open("tools/track.json", "w", encoding="utf-8") as file:
         json.dump(tracks, file, ensure_ascii=False, indent=4)
-
 
 # 4. Borrow Book
 def borrow_book():
