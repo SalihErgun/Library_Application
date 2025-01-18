@@ -98,3 +98,5 @@ def delete_book():
     # Kitapları güncel dosyaya yaz
     write_books(kitaplar)
     print("Kitap başarıyla silindi.")
+
+
